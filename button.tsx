@@ -21,7 +21,7 @@ export default class Button extends React.Component {
     ];
 
     return (
-      <div className={className.join(" ").trim()}>
+      <div className={className.join(" ").trim()} role="button">
         <button onClick={this.handleClick}>{this.props.name}</button>
       </div>
     );
